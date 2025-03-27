@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <h1 class="text-2xl font-bold text-center mb-4">📦 ระบบจัดการคลังสินค้า</h1>
+
+        <!-- Form เพิ่มสินค้า -->
+        <div class="space-y-3">
+            <input type="text" id="productName" placeholder="ชื่อสินค้า" class="input">
+            <input type="number" id="productPrice" placeholder="ราคา" class="input">
+            <input type="number" id="productStock" placeholder="จำนวนคงเหลือ" class="input">
+            <input type="text" id="productCategory" placeholder="ประเภทสินค้า" class="input">
+            <button onclick="addProduct()" class="btn">➕ เพิ่มสินค้า</button>
+        </div>
+
+        <!-- รายการสินค้า -->
+        <h2 class="section-title">📋 รายการสินค้า</h2>
+        <ul id="productList" class="list"></ul>
+
+        <!-- แจ้งเตือนสินค้าคงเหลือต่ำ -->
+        <h2 class="section-title">⚠️ แจ้งเตือนสินค้าคงเหลือน้อย</h2>
+        <ul id="lowStockList" class="list text-red-500"></ul>
+
+        <!-- ปุ่มสร้างรายงานการขาย -->
+        <button onclick="generateSalesReport()" class="btn mt-4">📊 สร้างรายงานการขาย</button>
+        <pre id="salesReport" class="p-3 bg-gray-200 rounded mt-3"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

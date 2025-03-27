@@ -1,0 +1,37 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    list-style: none;
+}
